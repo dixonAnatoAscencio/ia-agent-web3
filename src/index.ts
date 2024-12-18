@@ -7,7 +7,7 @@ import { performRun } from "./openai/performRun";
 
 async function main() {
     const client = new OpenAi()
-    const message = "Hello, Alt Cunningham!"
+    const message = "Hey Alt, what is your wallet's balance?"
 
     const assistant = await createAssistant(client)
     const thread = await createThread(client, message)
@@ -18,7 +18,7 @@ async function main() {
 
 
 
-    console.log("Hello World!");
+    console.log(result);
 }
 
 main()
